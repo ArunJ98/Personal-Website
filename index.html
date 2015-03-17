@@ -1,0 +1,349 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="personalWeb.css">
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700italic' rel='stylesheet' type='text/css'>
+<style>
+body{
+  padding:0;
+  margin:0;
+  border:0;
+}
+@font-face{
+  font-family: Gotham Rounded Book;
+  src: url('gotham/gotham-rounded-book.eot');
+  src: url('gotham/gotham-rounded-book.eot?#iefix') format('embedded-opentype'),
+  url('gotham/gotham-rounded-book.otf') format('opentype'),
+  url('gotham/gotham-rounded-book.woff') format('woff'),
+  url('gotham/gotham-rounded-book.ttf')  format('truetype');
+  font-weight: normal;
+}
+@font-face{
+  font-family: Bebas Neue;
+  src: url('bebas/regbebas.eot');
+  src: url('bebas/regbebas.eot?#iefix') format('embedded-opentype'),
+  url('bebas/regbebas.otf') format('opentype'),
+  url('bebas/regbebas.woff') format('woff'),
+  url('bebas/regbebas.ttf')  format('truetype');
+  font-weight: normal;
+}
+@font-face{
+  font-family:Roboto-Slab-Light;
+  src: url('roboto-slab-light/roboto-slab-light.eot');
+  src: url('roboto-slab-light/roboto-slab-light.eot?#iefix') format('embedded-opentype'),
+  url('roboto-slab-light/roboto-slab-light.otf') format('opentype'),
+  url('roboto-slab-light/roboto-slab-light.woff') format('woff'),
+  url('roboto-slab-light/roboto-slab-light.ttf')  format('truetype');
+  font-weight: normal;
+}
+.headerImage{
+
+  font-size:6em;
+  width:100%;
+  padding-bottom:3em;
+  padding-top:3em;
+  color:white;
+  height:0px;
+  text-align:center;
+  background-image:url("HeaderBG.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.imgs{
+  text-align:center;
+  margin-top:-275px;
+}
+.imgs div{
+  width:250px;
+  height:250px;
+  margin:2em;
+  display:inline-block;
+  text-align:center;
+  position:relative;
+  border-radius:1000px;
+  border: solid 5px white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#arun{
+  background-image:url("arun.jpg");
+}
+
+
+.line{
+  height:5px;
+  width:100%;
+  background-color:gray;
+
+  position:absolute;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00a087;
+}
+
+* {margin: 0; padding: 0;}
+
+
+section {
+background: #fff;
+box-shadow: 0px 2px 2px #ebebeb;
+background-color: #444;
+}
+
+header {
+width: 900px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .nav li {
+    width: 150px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .aboutme{
+    position: relative;
+    overflow: hidden;
+  }
+  .bgimg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.4;
+      z-index: 0;
+  }
+  .otherimg{
+    opacity: 1.0;
+  }
+  .aboutme h1 {
+    padding: 10px;
+    text-align: center;
+      position: relative;
+      z-index: 1;
+      font-size: 4em;
+      font-family: 'Rock Salt', cursive;
+  }
+  .aboutme p {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5em;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+  }
+  .aboutme form {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5em;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+  }
+  .footer{
+    background-color: #000000;
+    padding: 25px;
+  
+    font-size: 1em;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+  }
+
+</style>
+</head>
+<body>
+  <div class= "top">
+  <section>
+ <header>
+  <nav class="nav">
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#robotics">Robotics</a></li>
+    <li><a href="#boyscouts">Boy Scouts</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contactme">Contact Me</a></li>
+   </ul>
+  </nav>
+</div>
+  <div class="logo"></div>
+ </header>
+</section>
+<a name="home"></a>
+
+  <div class="headerImage"><div class="imgs">
+
+    <div id="arun"></div>
+  </div> </div>
+  <a name="about"></a>
+  <div class="line"></div>
+
+
+  <div class="aboutme">
+
+        <h1> Who is Arun J.? </h1>
+        <center>
+        <table width="925">
+            <tr>
+              <td>
+                <p> <img class="otherimg" src="arun.jpg" width="300"> </p>
+              </td>
+              <td>
+                <p> Before I begin, I would like you inform you that this Website is currently designed for 1080p screens viewing this in fullscreen. I apoligize if things look a bit weird but am working on fixing it for all resolutions. I am Arun Jeevanantham, currently a sophomore at Westborough High School in Westborough, Massachusetts.</p>
+
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p> Overall, I have many interests and participate in many afterschool programs. One of my favorite programs is FIRST Robotics Competion (FRC). Read more about it <a href="#robotics">here.</a> I also really enjoy boyscouts, you can read more about it <a href="#boyscouts">here.</a> I am also involved in many more activites in school and out of school. In my free time, I tinker with electronics and computers and spend a lot of time working on my personal projects. Some of my personal projects includine teaching myself how to use Autodesk Maya while others are programming projects. For example, this website is one of my personal projects. You can read more about my projects <a href="#projects">here.</a>  </p>
+              </td>
+            </tr>
+        </table>
+      </center>
+        <img class="bgimg" src="computerBG.jpg">
+  </div>
+  <a name="robotics"></a>
+
+  <div class="line"></div>
+
+
+  <div class="aboutme">
+
+      <h1> Robotics </h1>
+      <center>
+        <table width="925">
+            <tr>
+              <td>
+                <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/u2NW9l8_-zY" frameborder="0" allowfullscreen></iframe></p>
+              </td>
+              <td>
+                <p> I partake in a program called FRC (FIRST Robotics Competition). FIRST (For Inspiration and Recognition of Science and Techonolgy) is a non profit organization which hosts this wonderful competition every year. The video on the left is our team (4048) playing this years game. I am operating the robot! </p>
+
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>This year was my 4th year in this program and I have loved every second of it. The real-world scenerio with time limitations and other limitations really captivate me and I love trying to design a new robot each year for the challenge presented to us. The first two years, I was a middle schooler and thus I spent those two years learning as much as I could from the mentors and the high schoolers. Last year, I started taking a bigger role on the robot as I continued developing my skills to lead the team once the seniors left. This year, I was the Associate Director of Electrical which meant that I was co-leading the electrical team. I also led a sub-team of the Mechanical team to build our claw mechanicsm which picks up the totes. Overall, I love this program and I have learned <em> SO MUCH </em> in my time with this program and I hope I can continue to do so the next few years. </p>
+              </td>
+            </tr>
+        </table>
+
+      </center>
+
+        <img class="bgimg" src="roboticsBG.jpg">
+
+  </div>
+
+  <a name="boyscouts"></a>
+  <div class="line"></div>
+
+
+  <div class="aboutme">
+
+        <h1> Boy Scouts </h1>
+        <p> I am Arun Jeevanantham, currently a sophomore at Westborough High School in Westborough, Massachusetts.</p>
+        <img class="bgimg" src="campingBG.jpg">
+
+  </div>
+
+  <a name="projects"></a>
+  <div class="line"></div>
+
+
+  <div class="aboutme">
+
+        <h1> My Projects </h1>
+        <p> I am Arun Jeevanantham, currently a sophomore at Westborough High School in Westborough, Massachusetts.</p>
+        <img class="bgimg" src="http://placekitten.com/1500/1000">
+
+  </div>
+
+  <a name="contactme"></a>
+  <div class="line"></div>
+
+
+  <div class="aboutme">
+
+        <h1> Contact me </h1>
+        <center>
+          <table width=" 925" >
+            <tr>
+              <td>
+          <p> If you have any questions or would like to collaborate with me on any projects, please contact me! Note: Email is probably better as I leave my phone turned off during school!</p>
+          <p> </p>
+        <p> Please Email me at: itsmearun98@gmail.com</p>
+        <p> </p>
+        <p> Please Call me at: 508-654-1546</p>
+        <p> </p>
+      </td>
+    </tr>
+  </table>
+
+        </center>
+        <img class="bgimg"  src="torotoBG.jpg">
+
+  </div>
+<div class="footer">
+  <center>
+  <p> All rights belong to Arun Jeevanantham. Idea for website inspired by Personal Website Project at Mass Academy.</p>
+</center>
+</div>
+
+
+
+</body>
+</html>
