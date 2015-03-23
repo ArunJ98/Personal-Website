@@ -39,7 +39,7 @@ body{
   color:white;
   height:0px;
   text-align:center;
-  background-image:url("HeaderBG.jpg");
+  background-image:url("http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,7 +127,7 @@ position: relative;
 }
 
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: #780000 ;
 }
 
 
@@ -191,8 +191,58 @@ position: relative;
   .footer{
     background-color: #000000;
     padding: 25px;
-  
+
     font-size: 1em;
     font-family: 'Exo 2', sans-serif;
     color: white;
+  }
+  .flip3D{
+    width:280px;
+    height:200px;
+    margin:10px;
+    float:left;
+    z-index: 1;
+
+    }
+  .flip3D > .front{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+    background:#FC0; width:280px; height:200px; border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    z-index: 1;
+    font-size: 2.5em;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+
+  }
+  .flip3D > .back{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 180deg );
+    background: #80BFFF; width:280px; height:200px; border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    z-index: 1;
+    font-size: 1.5em;
+    font-family: 'Exo 2', sans-serif;
+
+  }
+  .flip3D:hover > .front{
+    transform: perspective( 600px ) rotateY( -180deg );
+    z-index: 1;
+  }
+  .flip3D:hover > .back{
+    transform: perspective( 600px ) rotateY( 0deg );
+    z-index: 1;
+
+    .flipimg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.4;
+      z-index: 0;
+
+    }
   }
